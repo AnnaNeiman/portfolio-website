@@ -1,0 +1,94 @@
+/*
+Colors used:
+Primary Color (green): #90988D;
+Secondary Color (brown/gold): #A28359;
+Accent color (cream): #FAFAF8;
+Accent color (white): #FFFFFF;
+*/
+
+/* Fonts used
+Heading: Brandon Grotesque
+h1 40px, 500
+h2 35px, 500
+h3 30px, 400 italic;
+Body: Neue-Kabel
+16px, 300;
+Buttons: Brandon Grotesque
+16px, 500;
+Banner: Neue-Kabel
+25px, 300;
+/*
+
+/*Typography*/
+*/ body {
+  background-color: #ffffff;
+  font-family: 'neue-kabel', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: ##565656;
+}
+*/
+header {
+  background-color: #ffffff;
+  font-family: 'brandon-grotesque', sans-serif;
+  font-size: 20;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #A28359;
+}
+h1,
+h2,
+h3,
+h4
+h5
+{
+  line-height: 1.4;
+  display: block;
+}
+
+h1 {
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+  color: #A28359;
+}
+
+h2 {
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 1.75em;
+  font-weight: 500;
+  text-align: center;
+  color: #A28359;
+}
+
+h3 {
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  color: #A28359;
+}
+
+h4 {
+  font-family: "neue-kabel", sans-serif;
+  font-size: 1.25em;
+  font-weight: 500;
+  text-align: center;
+  color: #565656;
+}
+
+h5 {
+  font-family: "neue-kabel", sans-serif;
+  font-size: 1.15em;
+  font-weight: 500;
+  text-align: center;
+  color: #565656;
+}
+
+p {
+  font-family: 'neue-kabel', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
