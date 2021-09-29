@@ -1,24 +1,29 @@
 /*
 Colors used:
-Primary Color (green): #90988D;
+Primary Color (green): #848E78;
 Secondary Color (brown/gold): #A28359;
 Accent color (cream): #FAFAF8;
 Accent color (white): #FFFFFF;
 */
+/* GENERAL RULES */
+img {
+  width: 100%;
+}
+
 /*Typography*/
-*/ body {
+body {
   background-color: #ffffff;
   font-family: 'neue-kabel', sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
-  color: ##565656;
+  color: #565656;
 }
 
-*/ header {
+header {
   background-color: #ffffff;
   font-family: 'brandon-grotesque', sans-serif;
-  font-size: 20;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.6;
   color: #A28359;
@@ -84,4 +89,91 @@ ul {
   font-family: 'neue-kabel', sans-serif;
   font-size: 1em;
   padding-left: 2em;
+}
+
+/* LINKS AND BUTTONS */
+a {
+  color: #848E78;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #A28359;
+}
+
+a:hover,
+a:focus {
+  color: #848E78;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #848E78;
+}
+
+.button {
+  display: inline-block;
+  background-color: #848E78;
+  color: #FFFFFF;
+  font-weight: 500;
+  padding: 10px 20px 8px;
+  border-radius: 6px;
+  border-bottom: 3px solid #5A6052;
+  transition: 0.2s all;
+}
+
+.button:visited {
+  color: #FFFFFF;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px 20px 8px;
+}
+
+.button:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.button:active {
+  color: #FFFFFF;
+  background-color: #565656;
+}
+
+.button:focus {
+  outline: none;
+  text-decoration: none;
+  border: 3px solid #848E78;
+}
+
+.button.secondary {
+  background-color: #FFFFFF;
+  color: #848E78;
+  text-decoration: none;
+  border: 3px solid #848E78;
+  border-bottom: 3px solid #5A6052;
+}
+
+.button.secondary:visited {
+  background-color: #FFFFFF;
+  color: #848E78;
+  text-decoration: none;
+  border: 3px solid #848E78;
+  border-bottom: 3px solid #5A6052;
+}
+
+.button.secondary:hover {
+  background-color: #848E78;
+  color: #ffffff;
+}
+
+.button.secondary:active {
+  color: #FFFFFF;
+  background-color: #565656;
+}
+
+.button.secondary:focus {
+  background-color: #FFFFFF;
+  color: #848E78;
+  text-decoration: none;
+  border: 3px solid #848E78;
 }

@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <title>Learn About Me</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -13,7 +14,7 @@
 
 </head>
 
-<body>
+<body id="about">
   <header>
     <div>
       <a href="index.html">Anna Neiman</a>
@@ -26,14 +27,17 @@
       </nav>
     </div>
   </header>
-  <main>
+  <main id="main-content">
+    <!-- HEADING -->
     <div>
       <div>
         <h1>About</h1>
       </div>
     </div>
+    <!-- MAIN CONTENT -->
     <div>
       <div>
+        <!-- PROFILE IMAGE -->
         <picture>
           <source srcset="img/about/profile-photo@.5.jpg" media="(max-width:767px)">
           <img src="img/about/profile-photo@1.jpg" alt="Photo of designer Anna Neiman">
@@ -45,7 +49,7 @@
               design
               program. I am passionate about both mobile and web design. I particularly enjoy collaboration with other people to try and create the best product possible that supports the needs of users. My purpose in pursuing UI/UX design is my
               ability to directly help people by developing a positive relationship between users and the products they use through improving accessibility.</p>
-            <a href="files/aneiman_resume.pdf" target="_blank" download>Download My Resume</a>
+            <a href="files/aneiman_resume.pdf" class="button" target="_blank" download>Download My Resume</a>
           </div>
           <div>
             <h2>Skills & Tools</h2>
@@ -86,6 +90,7 @@
       </div>
     </div>
   </main>
+  <!-- FOOTER TEXT AND BUTTON -->
   <footer id="Contact">
     <div>
       <h2> lets talk! </h2>
@@ -93,10 +98,11 @@
         <a href="tel:7206894220">(720)689 4220)</a> Perfer to send an email?
       </p>
       <div>
-        <a href="mailto:annaneimandesigns@gmail.com?subject=%20Lets%20get%20in%20touch!" target="_blank">Email Me</a>
+        <a href="mailto:annaneimandesigns@gmail.com?subject=%20Lets%20get%20in%20touch!" class="button" target="_blank">Email Me</a>
       </div>
     </div>
-    <div>
+    <!-- SOCIAL LINKS -->
+    <div id="social">
       <ul>
         <li>
           <a href="https://www.linkedin.com/in/anna-neiman/" target="_blank">
@@ -110,10 +116,11 @@
         </li>
       </ul>
     </div>
-    <div>
+    <!-- COPYRIGHT -->
+    <div id="copyright">
       <p>Copyright Anna Neiman 2021</p>
     </div>
   </footer>
-</body>
+  </body>
 
-</html>
+  </html>
