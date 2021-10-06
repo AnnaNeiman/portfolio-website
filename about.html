@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <title>Learn About Me</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" href="https://use.typekit.net/nlk4fgv.css">
   <link rel="icon" type="image/png" href="img/Favicon/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
@@ -16,32 +16,35 @@
 
 <body id="about">
   <header>
-    <div>
-      <a href="index.html">Anna Neiman</a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="container">
+      <a href="index.html">
+        <img src="img/logo/logo.svg" alt="Anna Neiman Home" class="logo" />
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
     </div>
   </header>
   <main id="main-content">
     <!-- HEADING -->
     <div>
-      <div>
+      <div class="container">
         <h1>About</h1>
       </div>
     </div>
     <!-- MAIN CONTENT -->
     <div>
-      <div>
+      <div class="container">
         <!-- PROFILE IMAGE -->
-        <picture>
-          <source srcset="img/about/profile-photo@.5.jpg" media="(max-width:767px)">
-          <img src="img/about/profile-photo@1.jpg" alt="Photo of designer Anna Neiman">
-        </picture>
+        <div class="profile-photo">
+          <picture>
+            <source srcset="img/about/profile-photo@.5.jpg" media="(max-width:767px)">
+            <img src="img/about/profile-photo@1.jpg" alt="Photo of designer Anna Neiman">
+          </picture>
+        </div>
         <div>
           <div>
             <h2>My Story</h2>
@@ -49,78 +52,88 @@
               design
               program. I am passionate about both mobile and web design. I particularly enjoy collaboration with other people to try and create the best product possible that supports the needs of users. My purpose in pursuing UI/UX design is my
               ability to directly help people by developing a positive relationship between users and the products they use through improving accessibility.</p>
-            <a href="files/aneiman_resume.pdf" class="button" target="_blank" download>Download My Resume</a>
+            <div id="resume">
+              <a href="files/aneiman_resume.pdf" class="button" target="_blank" download>Download My Resume</a>
+            </div>
           </div>
-          <div>
-            <h2>Skills & Tools</h2>
-            <div>
-              <div>
-                <h3>Skills</h3>
-                <ul>
-                  <li>Research</li>
-                  <li>Competitive Analysis</li>
-                  <li>User flows, Stories & Personas</li>
-                  <li>Usability Testing</li>
-                  <li>Wireframing</li>
-                  <li>Prototyping</li>
-                  <li>Visual design</li>
-                  <li>Typography</li>
-                  <li>Style guides</li>
-                  <li>Frontend Development Knowledge</li>
-                </ul>
-              </div>
-              <div>
-                <h3>Tools</h3>
-                <ul>
-                  <li>Adobe XD</li>
-                  <li>Adobe Illustrator</li>
-                  <li>Adobe Photoshop</li>
-                  <li>Sketch</li>
-                  <li>InVision</li>
-                  <li>Figma</li>
-                  <li>Balsamiq</li>
-                  <li>FlowMapp</li>
-                  <li>Proto.io</li>
-                  <li>Flinto</li>
-                </ul>
+          <!-- CONTAINER FOR COLUMNS -->
+          <div class="row">
+            <!-- COLUMN: HIGHLIGHTS & STORY -->
+            <div class="col-lg-4" id="skills-tools">
+              <h2>Skills & Tools</h2>
+              <!-- CONTAINER FOR COLUMNS -->
+              <div class="row">
+                <!-- COLUMN: SKILLS -->
+                <div class="col-sm-6 col-md-6">
+                  <h3>Relevant Skills</h3>
+                  <div class="multi-column-list">
+                    <ul>
+                      <li>Research</li>
+                      <li>Competitive Analysis</li>
+                      <li>User flows, Stories & Personas</li>
+                      <li>Usability Testing</li>
+                      <li>Wireframing</li>
+                      <li>Prototyping</li>
+                      <li>Visual design</li>
+                      <li>Typography</li>
+                      <li>Style guides</li>
+                      <li>Frontend Development Knowledge</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <h3>Tools I Use</h3>
+                  <div class="multi-column-list">
+                    <ul>
+                      <li>Adobe XD</li>
+                      <li>Adobe Illustrator</li>
+                      <li>Adobe Photoshop</li>
+                      <li>Sketch</li>
+                      <li>InVision</li>
+                      <li>Figma</li>
+                      <li>Balsamiq</li>
+                      <li>FlowMapp</li>
+                      <li>Proto.io</li>
+                      <li>Flinto</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </main>
   <!-- FOOTER TEXT AND BUTTON -->
   <footer id="Contact">
-    <div>
-      <h2> lets talk! </h2>
-      <p> I'd love to talk with you about user-centric designs or to discuss potential work opportunities. Don't hesitate to get in touch! Call
-        <a href="tel:7206894220">(720)689 4220)</a> Perfer to send an email?
-      </p>
-      <div>
-        <a href="mailto:annaneimandesigns@gmail.com?subject=%20Lets%20get%20in%20touch!" class="button" target="_blank">Email Me</a>
-      </div>
-    </div>
-    <!-- SOCIAL LINKS -->
-    <div id="social">
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/anna-neiman/" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.behance.net/annaneiman1" target="_blank">
-            <i class="fab fa-behance"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- COPYRIGHT -->
-    <div id="copyright">
-      <p>Copyright Anna Neiman 2021</p>
-    </div>
+    <div class="title-wrapper">
+      <div class="container">
+        <h2> lets talk! </h2>
+        <p> I'd love to talk with you about user-centric designs or to discuss potential work opportunities. Don't hesitate to get in touch!
+        </p>
+        <div>
+          <a href="mailto:annaneimandesigns@gmail.com?subject=%20Lets%20get%20in%20touch!" class="button" target="_blank">Email Me</a>
+        </div>
+        <!-- SOCIAL LINKS -->
+        <div id="social">
+          <ul>
+            <li>
+              <a href="https://www.behance.net/annaneiman1" target="_blank">
+                <img src="img/social/behance.svg" alt="Behance profile (opens in new tab)" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/anna-neiman/" target="_blank">
+                <img src="img/social/linkedin.svg" alt="LinkedIn profile (opens in new tab)" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="copyright">
+          <!-- COPYRIGHT -->
+          <p>Copyright Anna Neiman 2021</p>
+        </div>
   </footer>
-  </body>
+</body>
 
-  </html>
+</html>

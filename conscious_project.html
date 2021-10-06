@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <title>Conscious</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" href="https://use.typekit.net/nlk4fgv.css">
   <link rel="icon" type="image/png" href="img/Favicon/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
@@ -15,207 +15,169 @@
 </head>
 
 <body id="conscious">
-  <header>
-    <div>
-      <a href="index.html">Anna Neiman</a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
-      </nav>
+  <header id="myheader">
+    <div class="container">
+      <a href="index.html">
+        <img src="img/logo/logo.svg" alt="Anna Neiman Home" class="logo" />
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
     </div>
   </header>
   <main id="main-content">
-  <!-- HEADING -->
+    <!-- HEADING -->
     <div>
-      <div>
+      <div class="container">
         <h1> Conscious </h1>
       </div>
     </div>
     <!-- MAIN CONTENT -->
     <div>
-      <div>
+      <div class="container">
         <!-- COVER IMAGE -->
-        <picture>
-          <source srcset="img/conscious/home-page/conscious-website-image@0.5.jpg" media="(max-width:767px)">
-          <img src="img/conscious/home-page/conscious-website-image@1.jpg" alt="Mockup displaying three phones showcasing Conscious App's final designs">
-        </picture>
+        <div class="image cover">
+          <picture>
+            <source srcset="img/conscious/home-page/conscious-website-image@0.5.jpg" media="(max-width:767px)">
+            <img src="img/conscious/home-page/conscious-website-image@1.jpg" alt="Mockup displaying three phones showcasing Conscious App's final designs">
+          </picture>
+        </div>
+        <!-- OVERVIEW TEXT -->
+        <div class="text-content">
+          <h2> Overview </h2>
+          <p> Conscious is an iOS and Android native application that encourages users to implement change by becoming a more conscious shopper. The application is intended to educate users on how the products and companies they choose, support or
+            align with their values.</p>
+          <h3> My Role </h3>
+          <p>I was the UI/UX Designer for this project. I did everything from the initial concept and visual identity to user flows, wireframes, prototyping and the final screens and mockups.</p>
+          <h3> Duration </h3>
+          <p>I worked on the project from early April to early June 2021.</p>
+        </div>
+        <!-- SECTION: Process -->
+        <div>
+          <div class="text-content">
+            <h2> My Process </h2>
+            <h3> Research </h3>
+            <p> After reviewing a few different native applications that I found similar to my concept, I discovered features that would be beneficial to include. During this process I also noticed features that I wanted to improve upon based on
+              competitor applications.</p>
+          </div>
+          <div class="image">
+            <picture>
+              <source srcset="img/conscious/project-page/user-research/user-research@0.5x.jpg" media="(max-width:767px)">
+              <img src="img/conscious/project-page/user-research/user-research@1.jpg" alt="Image displaying research that went into the design of Conscious.">
+            </picture>
+          </div>
+          <!-- SECTION: Ideation -->
+          <div class="text-content">
+            <h3> Ideation </h3>
+            <p> During the UX Portion of this project I created I user flow diagram based on three user scenarios. The first “I want to browse companies and products that fit my values.” The second “I want to learn more about the companies I
+              support and if they align to my values.” The last “I want to scan products I use.” All three of these were necessary to build the he Minimum (or Most) Viable Product (MVP).</p>
+          </div>
+          <div class="image internal">
+            <picture>
+              <source srcset="img/conscious/project-page/user-flows/user-flows@0.5x.jpg" media="(max-width:767px)">
+              <img src="img/conscious/project-page/user-flows/user-flows@1.jpg" alt="Image displaying the user flows.">
+            </picture>
+          </div>
+          <!-- SECTION: Wireframe -->
+          <div class="text-content">
+            <h3> Wireframe </h3>
+            <p> Using the latest human interface guidelines and Material Designs I created two mid fidelity wireframes of the app that use standard UI elements from each Apple and Android mobile operating system.</p>
+          </div>
+          <div class="image">
+            <picture>
+              <source srcset="img/conscious/project-page/low-fidelity-wireframes/low-fidelity-wireframes@0.5x.jpg" media="(max-width:767px)">
+              <img src="img/conscious/project-page/low-fidelity-wireframes/low-fidelity-wireframes@1.jpg" alt="Image displaying the user flows.">
+            </picture>
+          </div>
+          <!-- SECTION: User Testing -->
+          <div class="text-content">
+            <h3> User Testing </h3>
+            <p> I tested my mid fidelity wireframes on seven users. Many expressed their need for an app of this type, and praised the visual design. Each provided praise and valuable feedback on some pain points in the app.</p>
+          </div>
+          <div class="image">
+            <picture>
+              <source srcset="img/conscious/project-page/user-testing/user-testing@0.5x.jpg" media="(max-width:767px)">
+              <img src="img/conscious/project-page/user-testing/user-testing@1.jpg" alt="Image displaying the user testing results.">
+            </picture>
+          </div>
+          <!-- SECTION: Final Design & Mockups -->
+          <div class="text-content">
+            <h3> Final Design & Mockups </h3>
+            <p> Through the helpful information I recived from my user testing I finalized my designs. I created eleven screens for each of operating system, iOS and Android. All screens can be broken down into a few main categories depending on
+              function and content. The first category is The Onboarding Process. These screens provide users with a short introduction of the app and the option to sign up or sign in. The second category are the Search and Filtering screens which
+              take up a large portion of the conscious app as there are multiple screens that allow users to search. The last category are The Company And Product Infomation screens. These are the features that allows users to better understand in
+              better detail the values a company or product might have in contrast to their own.</p>
+          </div>
+          <div class="image">
+            <picture>
+              <source srcset="img/conscious/project-page/final-designs/Android/final-designs-andriod@0.5x.jpg" media="(max-width:767px)">
+              <img src="img/conscious/project-page/final-designs/Android/final-designs-andriod@1.jpg" alt="Image displaying final Andriod designs.">
+            </picture>
+          </div>
+          <div class="image">
+            <picture>
+              <source srcset="img/conscious/project-page/final-designs/iOS/final-designs-ios@0.5x.jpg" media="(max-width:767px)">
+              <img src="img/conscious/project-page/final-designs/iOS/final-designs-ios@1.jpg" alt="Image displaying final iOS designs.">
+            </picture>
+          </div>
+          <!-- SECTION: Prototype & Case Study -->
+          <div class="text-content">
+            <h3> Prototype & Case Study </h3>
+            <p> I created an interactive prototype that you can go through and see each screen in action. View the <a href="https://invis.io/TM112KI4SEVJ" target="_blank">iOS</a> or the <a href="https://invis.io/XT112LKZNZMD" target="_blank">
+                Android</a> prototype. Also feel free to view the full case study on Behance</p>
+          </div>
+          <div class="image">
+            <picture>
+              <source srcset="img/conscious/project-page/prototype/prototype@0.5x.jpg" media="(max-width:767px)">
+              <img src="img/conscious/project-page/prototype/prototype@1.jpg" alt="Image displaying the prototypes.">
+            </picture>
+            <div id="casestudy">
+              <a href=" https://www.behance.net/gallery/125599901/conscious" class="button" target="_blank">View Case Study</a>
+            </div>
+            <!-- SECTION: Conclusion -->
+            <div class="text-content">
+              <h3> Conclusion </h3>
+              <p> My main goal was to adhere to the strict human interface and material guidelines to create an app that helps its users become more conscious shoppers. Through research, wireframes, user feedback and multiple design iterations I
+                was
+                able
+                to reach my goal by staying within each operating systems guidelines and watch my app come to life.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <!-- OVERVIEW TEXT -->
-    <div>
-      <div>
-        <h2> Overview </h2>
-        <p> Conscious is an iOS and Android native application that encourages users to implement change by becoming a more conscious shopper. The application is intended to educate users on how the products and companies they choose, support or
-          align with their values.</p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h3> My Role </h3>
-        <p>I was the UI/UX Designer for this project. I did everything from the initial concept and visual identity to user flows, wireframes, prototyping and the final screens and mockups.</p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h3> Duration </h3>
-        <p>I worked on the project from early April to early June 2021.</p>
-      </div>
-    </div>
-    <!-- SECTION: Process -->
-    <div>
-      <div>
-        <h2> My Process </h2>
-        <h3> Research </h3>
-        <p> After reviewing a few different native applications that I found similar to my concept, I discovered features that would be beneficial to include. During this process I also noticed features that I wanted to improve upon based on
-          competitor applications.</p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <picture>
-          <source srcset="img/conscious/project-page/user-research/user-research@0.5x.jpg" media="(max-width:767px)">
-          <img src="img/conscious/project-page/user-research/user-research@1.jpg" alt="Image displaying research that went into the design of Conscious.">
-        </picture>
-      </div>
-    </div>
-    <!-- SECTION: Ideation -->
-    <div>
-      <div>
-        <h3> Ideation </h3>
-        <p> During the UX Portion of this project I created I user flow diagram based on three user scenarios. The first “I want to browse companies and products that fit my values.” The second “I want to learn more about the companies I support and
-          if they align to my values.” The last “I want to scan products I use.” All three of these were necessary to build the he Minimum (or Most) Viable Product (MVP).</p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <picture>
-          <source srcset="img/conscious/project-page/user-flows/user-flows@0.5x.jpg" media="(max-width:767px)">
-          <img src="img/conscious/project-page/user-flows/user-flows@1.jpg" alt="Image displaying the user flows.">
-        </picture>
-      </div>
-    </div>
-    <!-- SECTION: Wireframe -->
-    <div>
-      <div>
-        <h3> Wireframe </h3>
-        <p> Using the latest human interface guidelines and Material Designs I created two mid fidelity wireframes of the app that use standard UI elements from each Apple and Android mobile operating system.</p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <picture>
-          <source srcset="img/conscious/project-page/low-fidelity-wireframes/low-fidelity-wireframes@0.5x.jpg" media="(max-width:767px)">
-          <img src="img/conscious/project-page/low-fidelity-wireframes/low-fidelity-wireframes@1.jpg" alt="Image displaying the user flows.">
-        </picture>
-      </div>
-    </div>
-    <!-- SECTION: User Testing -->
-    <div>
-      <div>
-        <h3> User Testing </h3>
-        <p> I tested my mid fidelity wireframes on seven users. Many expressed their need for an app of this type, and praised the visual design. Each provided praise and valuable feedback on some pain points in the app.</p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <picture>
-          <source srcset="img/conscious/project-page/user-testing/user-testing@0.5x.jpg" media="(max-width:767px)">
-          <img src="img/conscious/project-page/user-testing/user-testing@1.jpg" alt="Image displaying the user testing results.">
-        </picture>
-      </div>
-    </div>
-    <!-- SECTION: Final Design & Mockups -->
-    <div>
-      <div>
-        <h3> Final Design & Mockups </h3>
-        <p> Through the helpful information I recived from my user testing I finalized my designs. I created eleven screens for each of operating system, iOS and Android. All screens can be broken down into a few main categories depending on function
-          and content. The first category is The Onboarding Process. These screens provide users with a short introduction of the app and the option to sign up or sign in. The second category are the Search and Filtering screens which take up a large
-          portion of the conscious app as there are multiple screens that allow users to search. The last category are The Company And Product Infomation screens. These are the features that allows users to better understand in better detail the
-          values a company or product might have in contrast to their own.</p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <picture>
-          <source srcset="img/conscious/project-page/final-designs/Android/final-designs-andriod@0.5x.jpg" media="(max-width:767px)">
-          <img src="img/conscious/project-page/final-designs/Android/final-designs-andriod@1.jpg" alt="Image displaying final Andriod designs.">
-        </picture>
-      </div>
-    </div>
-    <div>
-      <div>
-        <picture>
-          <source srcset="img/conscious/project-page/final-designs/iOS/final-designs-ios@0.5x.jpg" media="(max-width:767px)">
-          <img src="img/conscious/project-page/final-designs/iOS/final-designs-ios@1.jpg" alt="Image displaying final iOS designs.">
-        </picture>
-      </div>
-    </div>
-    <!-- SECTION: Prototype -->
-    <div>
-      <div>
-        <h3> Prototype </h3>
-        <p> I created an interactive prototype that you can go through and see each screen in action.</p>
-        <a href="https://invis.io/TM112KI4SEVJ" class="button secondary" target="_blank">View iOS</a>
-        <a href="https://invis.io/XT112LKZNZMD" class="button secondary" target="_blank">View Android</a>
-      </div>
-    </div>
-    <div>
-      <div>
-        <picture>
-          <source srcset="img/conscious/project-page/prototype/prototype@0.5x.jpg" media="(max-width:767px)">
-          <img src="img/conscious/project-page/prototype/prototype@1.jpg" alt="Image displaying the prototypes.">
-        </picture>
-      </div>
-    </div>
-    <!-- SECTION: Case Study -->
-    <div>
-      <div>
-        <h3> Case Study </h3>
-        <p> Feel free to view the full case study on Behance.<a href=" https://www.behance.net/gallery/125599901/conscious" class="button secondary" target="_blank">View Case Study</a>.</p>
-      </div>
-    </div>
-    <!-- SECTION: Conclusion -->
-    <div>
-      <div>
-        <h3> Conclusion </h3>
-        <p> My main goal was to adhere to the strict human interface and material guidelines to create an app that helps its users become more conscious shoppers. Through research, wireframes, user feedback and multiple design iterations I was able
-          to reach my goal by staying within each operating systems guidelines and watch my app come to life.</p>
-      </div>
-    </div>
   </main>
   <!-- FOOTER TEXT AND BUTTON -->
   <footer id="Contact">
-    <div>
-      <h2> lets talk! </h2>
-      <p> I'd love to talk with you about user-centric designs or to discuss potential work opportunities. Don't hesitate to get in touch! Call
-        <a href="tel:7206894220">(720)689 4220)</a> Perfer to send an email?
-      </p>
-      <div>
-        <a href="mailto:annaneimandesigns@gmail.com?subject=%20Lets%20get%20in%20touch!" class="button" target="_blank">Email Me</a>
-      </div>
-    </div>
-    <!-- SOCIAL LINKS -->
-    <div id="social">
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/anna-neiman/" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.behance.net/annaneiman1" target="_blank">
-            <i class="fab fa-behance"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- COPYRIGHT -->
-    <div id="copyright">
-      <p>Copyright Anna Neiman 2021</p>
-    </div>
+    <div class="title-wrapper">
+      <div class="container">
+        <h2> lets talk! </h2>
+        <p> I'd love to talk with you about user-centric designs or to discuss potential work opportunities. Don't hesitate to get in touch!
+        </p>
+        <div>
+          <a href="mailto:annaneimandesigns@gmail.com?subject=%20Lets%20get%20in%20touch!" class="button" target="_blank">Email Me</a>
+        </div>
+        <!-- SOCIAL LINKS -->
+        <div id="social">
+          <ul>
+            <li>
+              <a href="https://www.behance.net/annaneiman1" target="_blank">
+                <img src="img/social/behance.svg" alt="Behance profile (opens in new tab)" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/anna-neiman/" target="_blank">
+                <img src="img/social/linkedin.svg" alt="LinkedIn profile (opens in new tab)" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="copyright">
+          <!-- COPYRIGHT -->
+          <p>Copyright Anna Neiman 2021</p>
+        </div>
   </footer>
 </body>
 

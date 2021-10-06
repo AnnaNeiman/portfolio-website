@@ -2,15 +2,15 @@
 Colors used:
 Primary Color (green): #848E78;
 Secondary Color (brown/gold): #A28359;
-Accent color (cream): #FAFAF8;
+Accent color (cream): #F5F5EF;
 Accent color (white): #FFFFFF;
+Accent color (Grey): #565656
 */
 /* GENERAL RULES */
 img {
   width: 100%;
 }
 
-/*Typography*/
 body {
   background-color: #ffffff;
   font-family: 'neue-kabel', sans-serif;
@@ -20,15 +20,11 @@ body {
   color: #565656;
 }
 
-header {
-  background-color: #ffffff;
-  font-family: 'brandon-grotesque', sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.6;
-  color: #A28359;
+* {
+  box-sizing: border-box;
 }
 
+/*Typography*/
 h1,
 h2,
 h3,
@@ -48,18 +44,18 @@ h1 {
 
 h2 {
   font-family: "brandon-grotesque", sans-serif;
-  font-size: 1.75em;
-  font-weight: 500;
+  font-size: 1.65em;
+  font-weight: 400;
   text-align: center;
   color: #A28359;
 }
 
 h3 {
   font-family: "brandon-grotesque", sans-serif;
-  font-size: 1.5em;
-  font-weight: 400;
+  font-size: 1.35em;
+  font-weight: 500;
   font-style: italic;
-  text-align: center;
+  text-align: left;
   color: #A28359;
 }
 
@@ -81,7 +77,7 @@ h5 {
 
 p {
   font-family: 'neue-kabel', sans-serif;
-  font-size: 1em;
+  font-size: .85em;
   font-weight: 400;
 }
 
@@ -145,35 +141,228 @@ a:active {
   border: 3px solid #848E78;
 }
 
-.button.secondary {
-  background-color: #FFFFFF;
-  color: #848E78;
-  text-decoration: none;
-  border: 3px solid #848E78;
-  border-bottom: 3px solid #5A6052;
+/* LAYOUT & SPACING */
+/* top padding on main element accomodates for fixed nav bar */
+main {
+  position: relative;
 }
 
-.button.secondary:visited {
-  background-color: #FFFFFF;
-  color: #848E78;
-  text-decoration: none;
-  border: 3px solid #848E78;
-  border-bottom: 3px solid #5A6052;
+/* general page margins */
+.container {
+  margin: 0 1.25em;
 }
 
-.button.secondary:hover {
+/* spacing between blocks of content */
+.image {
+  max-width: 900px;
+  margin: 0 auto 2em;
+}
+
+.image.cover {
+  margin-bottom: 1em;
+}
+
+.image.internal {
+  margin: 0 auto 1em;
+}
+
+.image.last {
+  margin-bottom: 0;
+}
+
+.text-content {
+  max-width: 900px;
+  margin: 0 auto 1.5em;
+}
+
+#work .row {
+  padding-bottom: 25px;
+}
+
+/* HOME PAGE */
+#hero {
+  background-color: #F5F5EF;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+#hero h1 {
+  color: #A28359;
+  margin: 0;
+}
+
+#hero h2 {
+  color: #565656;
+  margin: 0.8em auto 0.6em;
+  max-width: 270px;
+}
+
+#hero h3 {
+  color: #565656;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.55;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  max-width: 300px;
+}
+
+#work h3 {
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-style: italic;
+  text-align: left;
+  color: #A28359;
+}
+
+/* Conscious Project*/
+#casestudy {
+  text-align: center;
+}
+
+/* HEADER/NAV BAR */
+.logo {
+  max-width: 70px;
+  text-align: left
+}
+
+header {
   background-color: #848E78;
+  text-align: unset;
+  padding: 10px 0;
+  z-index: 9999;
+  width: 100%;
+  -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 15, 0.4);
+  -moz-box-shadow: 0 3px 8px 0 rgba(15, 15, 15, 0.4);
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 15, 0.4);
+}
+
+#myHeader {
+  position: fixed;
+  z-index: 9999;
+}
+
+main {
+  padding-top: 208.5px;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 15px 0;
+  display: inline-block;
+  width: 100%
+}
+
+nav>ul>li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li>a {
+  padding: 0 5px;
+  font-family: "neue-kabel", sans-serif;
   color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
-.button.secondary:active {
-  color: #FFFFFF;
-  background-color: #565656;
-}
-
-.button.secondary:focus {
-  background-color: #FFFFFF;
-  color: #848E78;
+nav>ul>li>a:visited {
+  padding: 0 5px;
+  color: #ffffff;
+  text-transform: uppercase;
   text-decoration: none;
-  border: 3px solid #848E78;
+  font-weight: 500;
+}
+
+nav>ul>li>a:active {
+  padding: 0 5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+nav>ul>li>a:hover {
+  display: inline-block;
+  color: #848E78;
+  background-color: #F5F5EF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ABOUT PAGE */
+div.profile-photo {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.multi-column-list ul {
+  margin-top: 0;
+}
+
+div.multi-column-list {
+  -moz-column-count: 1;
+  -moz-column-gap: 2px;
+  -webkit-column-count: 1;
+  -webkit-column-gap: 2px;
+  column-count: 1;
+  column-gap: 2px;
+}
+
+#resume {
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background-color: #FAFAF7;
+  text-align: center;
+  padding: .5em .5em 0.5em;
+  width: 100%;
+  margin-top: 2.8em;
+}
+
+#contact p {
+  max-width: 380px;
+  margin: 0.75em auto;
+}
+
+#contact .title-wrapper {
+  margin-bottom: 22px;
+}
+
+#social ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 0em;
+  line-height: 0;
+  margin: 18px 0;
+}
+
+#social li {
+  display: inline;
+}
+
+#social a,
+#social a:visited,
+#social a:hover,
+#social a:active,
+#social a:focus {
+  text-decoration: none;
+  color: transparent;
+  line-height: 0%;
+}
+
+#social img {
+  height: 42px;
+  width: auto;
+  opacity: 0.7;
+  padding: 12px;
+  margin: 0 4px;
+  color: #565656
 }
