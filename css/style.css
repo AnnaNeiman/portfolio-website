@@ -325,7 +325,7 @@ nav>ul>li>a:hover {
 
 /* ABOUT PAGE */
 div.profile-photo {
-  max-width: 800px;
+  max-width: 525px;
   margin: 0 auto;
 }
 
@@ -574,6 +574,7 @@ L devices - 1024px and larger
     #work p {
       font-size: 1.02em;
     }
+    /* ABOUT PAGE*/
 
     /* FOOTER*/
     #Contact p {
