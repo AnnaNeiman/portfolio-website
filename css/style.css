@@ -36,7 +36,7 @@ h5 {
 
 h1 {
   font-family: "brandon-grotesque", sans-serif;
-  font-size: 2em;
+  font-size: 1.75em;
   font-weight: 500;
   text-align: center;
   color: #A28359;
@@ -44,7 +44,7 @@ h1 {
 
 h2 {
   font-family: "brandon-grotesque", sans-serif;
-  font-size: 1.65em;
+  font-size: 1.60em;
   font-weight: 400;
   text-align: center;
   color: #A28359;
@@ -60,8 +60,8 @@ h3 {
 }
 
 h4 {
-  font-family: "neue-kabel", sans-serif;
-  font-size: 1.25em;
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 1.1em;
   font-weight: 500;
   text-align: center;
   color: #565656;
@@ -69,8 +69,8 @@ h4 {
 
 h5 {
   font-family: "neue-kabel", sans-serif;
-  font-size: 1.15em;
-  font-weight: 500;
+  font-size: 1em;
+  font-weight: 400;
   text-align: center;
   color: #565656;
 }
@@ -115,7 +115,8 @@ a:active {
   padding: 10px 20px 8px;
   border-radius: 6px;
   border-bottom: 3px solid #5A6052;
-  transition: 0.2s all;
+  transition-duration: .5s;
+  transition: 0.5s opacity;
 }
 
 .button:visited {
@@ -188,7 +189,12 @@ main {
   text-align: center;
 }
 
+#hero span {
+  display: block;
+}
+
 #hero h1 {
+  font-size: 1.40em;
   color: #A28359;
   margin: 0;
 }
@@ -219,6 +225,23 @@ main {
   color: #A28359;
 }
 
+/* ANIMATIONS */
+#hand_left {
+  animation: hand_left .5s linear infinite;
+  transform-origin: center;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes hand_left {
+  from {
+    transform: rotateZ(5deg);
+  }
+
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
 /* Conscious Project*/
 #casestudy {
   text-align: center;
@@ -232,7 +255,6 @@ main {
 
 header {
   background-color: #848E78;
-  text-align: unset;
   padding: 10px 0;
   z-index: 9999;
   width: 100%;
@@ -247,7 +269,7 @@ header {
 }
 
 main {
-  padding-top: 208.5px;
+  padding-top: 185px;
 }
 
 nav>ul {
@@ -295,6 +317,12 @@ nav>ul>li>a:hover {
   font-weight: 500;
 }
 
+.active {
+  height: 2px;
+  width 10rem;
+  transition: transform. 6s;
+  }
+
 /* ABOUT PAGE */
 div.profile-photo {
   max-width: 800px;
@@ -303,15 +331,6 @@ div.profile-photo {
 
 .multi-column-list ul {
   margin-top: 0;
-}
-
-div.multi-column-list {
-  -moz-column-count: 1;
-  -moz-column-gap: 2px;
-  -webkit-column-count: 1;
-  -webkit-column-gap: 2px;
-  column-count: 1;
-  column-gap: 2px;
 }
 
 #resume {
@@ -366,3 +385,200 @@ footer {
   margin: 0 4px;
   color: #565656
 }
+
+/* ==============================
+S devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+  /* LAYOUT & SPACING */
+  .container {
+    margin: 0 1.5em;
+  }
+
+  [class*="col-"] {
+    float: none;
+    padding: 0 0.65em;
+  }
+
+  .row:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* HEADER/NAV BAR */
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 131px;
+  }
+
+  /* HOME PAGE */
+  #hero {
+    text-align: center;
+  }
+
+  #hero h1 {
+    font-size: 1.5em;
+    font-weight: 500;
+    max-width: 420px;
+    margin: 30px auto;
+  }
+
+  #hero h5 {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 20px auto;
+    max-width: 360px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  #work p {
+    font-size: 1em;
+  }
+
+  .logo {
+    max-width: 100px;
+    text-align: left
+  }
+
+  /* ABOUT ME */
+  #skills-tools {
+    width: 100%;
+  }
+
+  #about-page h2 {
+    margin-top: 45px;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
+  /* FOOTER*/
+  #Contact p {
+    font-size: 1em;
+  }
+}
+
+/* ==============================
+M devices - 768px and larger
+============================== */
+@media only screen and (min-width: 768px) {
+
+  /* LAYOUT & SPACING */
+  .container {
+    margin: 0 1.75em;
+  }
+
+  [class*="col-"] {
+    padding: 0 0.65em;
+    float: left;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .row:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* ABOUT PAGE */
+  .multi-column-list ul {
+    margin-top: 0;
+  }
+
+  #about-page h2 {
+    margin-top: 45px;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
+  /* ==============================
+L devices - 1024px and larger
+============================== */
+  @media only screen and (min-width: 1024px) {
+
+    /* LAYOUT & SPACING */
+    .container {
+      max-width: 1200px;
+      padding: 0 1.75em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    [class*="col-"] {
+      padding: 0 0.8em;
+    }
+
+    .col-lg-7 {
+      width: 58%;
+    }
+
+    .col-lg-5 {
+      width: 42%;
+    }
+
+    .col-lg-4 {
+      width: 33%;
+    }
+
+    .col-lg-8 {
+      width: 67%;
+    }
+
+    /* HOME PAGE */
+    #hero {
+      text-align: center;
+    }
+
+    #hero h1 {
+      font-size: 1.60em;
+      font-weight: 500;
+      max-width: 800px;
+      margin: 30px auto;
+    }
+
+    #hero h5 {
+      font-size: 1.1em;
+      font-weight: 400;
+      max-width: 800px;
+    }
+
+    #hero span {
+      display: block;
+    }
+
+    #work h3 {
+      font-size: 1.45em;
+    }
+
+    #work p {
+      font-size: 1.02em;
+    }
+
+    /* FOOTER*/
+    #Contact p {
+      font-size: 1.05em;
+      max-width: 700px;
+      margin: 30px auto;
+    }
+  }
