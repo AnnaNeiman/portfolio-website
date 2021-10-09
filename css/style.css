@@ -321,7 +321,7 @@ nav>ul>li>a:hover {
   height: 2px;
   width 10rem;
   transition: transform. 6s;
-  }
+}
 
 /* ABOUT PAGE */
 div.profile-photo {
@@ -574,8 +574,8 @@ L devices - 1024px and larger
     #work p {
       font-size: 1.02em;
     }
-    /* ABOUT PAGE*/
 
+    /* ABOUT PAGE*/
     /* FOOTER*/
     #Contact p {
       font-size: 1.05em;
