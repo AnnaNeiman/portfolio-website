@@ -1,1 +1,1 @@
-console.log("hello world");
+console.log("Hi! Welcome to My Portfolio Site");
