@@ -16,7 +16,7 @@ body {
   font-family: 'neue-kabel', sans-serif;
   font-size: 18px;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 1.5;
   color: #565656;
 }
 
@@ -194,6 +194,7 @@ main {
 }
 
 #hero h1 {
+  padding-top: 10px;
   font-size: 1.40em;
   color: #A28359;
   margin: 0;
@@ -249,13 +250,14 @@ main {
 
 /* HEADER/NAV BAR */
 .logo {
+  padding-top: 15px;
   max-width: 70px;
   text-align: left
 }
 
 header {
   background-color: #848E78;
-  padding: 10px 0;
+  padding: 10px,0,4px;
   z-index: 9999;
   width: 100%;
   -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 15, 0.4);
@@ -269,18 +271,25 @@ header {
 }
 
 main {
-  padding-top: 185px;
+  padding-top: 100px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 5px;
+  top: 30px;
+  font-size: 30px;
 }
 
 nav>ul {
-  list-style-type: none;
-  padding: 15px 0;
-  display: inline-block;
-  width: 100%
-}
-
-nav>ul>li {
-  display: inline-block;
   list-style-type: none;
   padding: 0;
 }
@@ -410,19 +419,39 @@ S devices (640px and larger)
   /* HEADER/NAV BAR */
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 2px 0 6px;
   }
 
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 12px;
+  }
+
+  nav > ul {
+    margin: 1.2em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   main {
-    padding-top: 131px;
+    padding-top: 100px;
   }
 
+  .logo {
+    max-width: 80px;
+    text-align: left
+  }
   /* HOME PAGE */
   #hero {
     text-align: center;
@@ -450,11 +479,6 @@ S devices (640px and larger)
     font-size: 1em;
   }
 
-  .logo {
-    max-width: 100px;
-    text-align: left
-  }
-
   /* ABOUT ME */
   #skills-tools {
     width: 100%;
@@ -468,118 +492,114 @@ S devices (640px and larger)
     margin-top: 0;
   }
 
+  #mystory {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
   /* FOOTER*/
   #Contact p {
     font-size: 1em;
   }
-}
-
-/* ==============================
-M devices - 768px and larger
-============================== */
-@media only screen and (min-width: 768px) {
-
-  /* LAYOUT & SPACING */
-  .container {
-    margin: 0 1.75em;
-  }
-
-  [class*="col-"] {
-    padding: 0 0.65em;
-    float: left;
-  }
-
-  .col-md-6 {
-    width: 50%;
-  }
-
-  .row:after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  /* ABOUT PAGE */
-  .multi-column-list ul {
-    margin-top: 0;
-  }
-
-  #about-page h2 {
-    margin-top: 45px;
-  }
-
-  #about-page h3 {
-    margin-top: 0;
-  }
 
   /* ==============================
-L devices - 1024px and larger
+M devices - 768px and larger
 ============================== */
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
 
     /* LAYOUT & SPACING */
     .container {
-      max-width: 1200px;
-      padding: 0 1.75em;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 1.75em;
     }
 
     [class*="col-"] {
-      padding: 0 0.8em;
+      padding: 0 0.65em;
+      float: left;
     }
 
-    .col-lg-7 {
-      width: 58%;
+    .col-md-6 {
+      width: 50%;
     }
 
-    .col-lg-5 {
-      width: 42%;
+    .row:after {
+      content: "";
+      clear: both;
+      display: table;
     }
 
-    .col-lg-4 {
-      width: 33%;
-    }
+      /* ABOUT PAGE */
+      .multi-column-list ul {
+        margin-top: 0;
+      }
 
-    .col-lg-8 {
-      width: 67%;
-    }
+      #about-page h2 {
+        margin-top: 45px;
+      }
 
-    /* HOME PAGE */
-    #hero {
-      text-align: center;
-    }
+      #about-page h3 {
+        margin-top: 0;
+      }
 
-    #hero h1 {
-      font-size: 1.60em;
-      font-weight: 500;
-      max-width: 800px;
-      margin: 30px auto;
-    }
+      /* ==============================
+L devices - 1024px and larger
+============================== */
+      @media only screen and (min-width: 1024px) {
 
-    #hero h5 {
-      font-size: 1.1em;
-      font-weight: 400;
-      max-width: 800px;
-    }
+        /* LAYOUT & SPACING */
+        .container {
+          max-width: 1200px;
+          padding: 0 1.75em;
+          margin-left: auto;
+          margin-right: auto;
+        }
 
-    #hero span {
-      display: block;
-    }
+        [class*="col-"] {
+          padding: 0 0.8em;
+        }
 
-    #work h3 {
-      font-size: 1.45em;
-    }
+        .col-md-75 {
+          width: 75%;
+        }
 
-    #work p {
-      font-size: 1.02em;
-    }
+        .col-md-25 {
+          width: 25%;
+        }
 
-    /* ABOUT PAGE*/
-    /* FOOTER*/
-    #Contact p {
-      font-size: 1.05em;
-      max-width: 700px;
-      margin: 30px auto;
-    }
-  }
+        /* HOME PAGE */
+        #hero {
+          text-align: center;
+        }
+
+        #hero h1 {
+          font-size: 1.60em;
+          font-weight: 500;
+          max-width: 800px;
+          margin: 30px auto;
+        }
+
+        #hero h5 {
+          font-size: 1.1em;
+          font-weight: 400;
+          max-width: 800px;
+        }
+
+        #hero span {
+          display: block;
+        }
+
+        #work h3 {
+          font-size: 1.45em;
+        }
+
+        #work p {
+          font-size: 1.02em;
+        }
+
+        /* ABOUT PAGE*/
+        /* FOOTER*/
+        #Contact p {
+          font-size: 1.05em;
+          max-width: 700px;
+          margin: 30px auto;
+        }
+      }

@@ -10,23 +10,24 @@
   <link rel="stylesheet" href="https://use.typekit.net/nlk4fgv.css">
   <link rel="icon" type="image/png" href="img/Favicon/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
-  <script src="https://kit.fontawesome.com/8f23e52dfd.js" crossorigin="anonymous"></script>
-
+  <script src="https://kit.fontawesome.com/197cd10206.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="home">
   <header id="myHeader">
     <div class="container">
-      <a href="index.html">
+      <div class="navtoggle" id="myNavtoggle">
         <img src="img/logo/logo.svg" alt="Anna Neiman Home" class="logo" />
-        <nav>
-          <ul class="nav-list">
-            <li class="nav-item"><a href="index.html">Work</a></li>
-            <li class="nav-item"><a href="about.html">About Me</a></li>
-            <li class="nav-item"><a href="#Contact">Contact</a></li>
-            <div class="active"></div>
-          </ul>
-        </nav>
+        <a href="index.html">
+          <nav>
+            <ul class="nav-list">
+              <li class="nav-item"><a href="index.html">Work</a></li>
+              <li class="nav-item"><a href="about.html">About Me</a></li>
+              <li class="nav-item"><a href="#Contact">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            </ul>
+          </nav>
+      </div>
     </div>
   </header>
   <!-- HERO SECTION -->
@@ -1410,6 +1411,7 @@
           <p>Copyright Anna Neiman 2021</p>
         </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 
