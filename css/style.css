@@ -337,11 +337,31 @@ nav>ul>li>a:hover {
   position: relative;
 }
 
+.navtoggle.responsive li {
+  display: block;
+}
+
 .navtoggle li .icon {
   position: absolute;
   right: 5px;
   top: 30px;
   font-size: 30px;
+  color: #F5F5EF;
+  background-color: #848E78;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #F5F5EF;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 /* ABOUT PAGE */
@@ -429,20 +449,21 @@ S devices (640px and larger)
   }
 
   .col-md-6 {
-     width: 50%;
-   }
+    width: 50%;
+  }
 
-   .col-md-7 {
-     width: 60%;
-   }
+  .col-md-7 {
+    width: 60%;
+  }
 
-   .col-md-5 {
-     width: 40%;
-   }
+  .col-md-5 {
+    width: 40%;
+  }
 
-   .col-md-4 {
-     width: 30%;
-   }
+  .col-md-4 {
+    width: 30%;
+  }
+
   /* HEADER/NAV BAR */
   header {
     text-align: unset;
@@ -469,6 +490,19 @@ S devices (640px and larger)
 
   .navtoggle li:last-child {
     display: none;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0 0 0;
+  }
+
+  .navtoggle.responsive li {
+    padding: 0 0 0;
+    border-top: none;
+  }
+
+  .navtoggle.responsive li:last-child {
+    padding: 0 0 0;
   }
 
   main {
@@ -513,7 +547,7 @@ S devices (640px and larger)
   }
 
   #about-page h1 {
-  padding: 30px;
+    padding: 30px;
   }
 
   #about-page h2 {
@@ -525,7 +559,7 @@ S devices (640px and larger)
   }
 
   #resume-button {
-  padding-top: 10px;
+    padding-top: 10px;
   }
 
   .leftp50 {
@@ -602,12 +636,12 @@ L devices - 1024px and larger
       }
 
       .col-lg-7 {
-      width: 45%;
-    }
+        width: 45%;
+      }
 
-    .col-lg-5 {
-      width: 55%;
-    }
+      .col-lg-5 {
+        width: 55%;
+      }
 
       /* HOME PAGE */
       #hero {
@@ -640,7 +674,6 @@ L devices - 1024px and larger
       }
 
       /* ABOUT PAGE*/
-
       /* PROJECT PAGES*/
       .project-image {
         max-width: 500px;
