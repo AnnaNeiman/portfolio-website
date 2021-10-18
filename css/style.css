@@ -148,6 +148,10 @@ main {
   position: relative;
 }
 
+.col-sm-12 {
+  width: 100%;
+}
+
 /* general page margins */
 .container {
   margin: 0 1.25em;
@@ -243,10 +247,17 @@ main {
   }
 }
 
-/* Conscious Project*/
+/*Project Pages*/
 #casestudy {
   text-align: center;
 }
+
+#casestudy-button {
+  text-align: center;
+  margin-top: .75em;
+}
+
+/* ACTIVE NAV-PROJECT PAGE/*
 
 /* HEADER/NAV BAR */
 .logo {
@@ -257,7 +268,7 @@ main {
 
 header {
   background-color: #848E78;
-  padding: 10px,0,4px;
+  padding: 10px, 0, 4px;
   z-index: 9999;
   width: 100%;
   -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 15, 0.4);
@@ -272,21 +283,6 @@ header {
 
 main {
   padding-top: 100px;
-}
-
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-
-.navtoggle li .icon {
-  position: absolute;
-  right: 5px;
-  top: 30px;
-  font-size: 30px;
 }
 
 nav>ul {
@@ -330,6 +326,22 @@ nav>ul>li>a:hover {
   height: 2px;
   width 10rem;
   transition: transform. 6s;
+}
+
+/*HAMBURGER MENU*/
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 5px;
+  top: 30px;
+  font-size: 30px;
 }
 
 /* ABOUT PAGE */
@@ -416,6 +428,21 @@ S devices (640px and larger)
     display: table;
   }
 
+  .col-md-6 {
+     width: 50%;
+   }
+
+   .col-md-7 {
+     width: 60%;
+   }
+
+   .col-md-5 {
+     width: 40%;
+   }
+
+   .col-md-4 {
+     width: 30%;
+   }
   /* HEADER/NAV BAR */
   header {
     text-align: unset;
@@ -428,7 +455,7 @@ S devices (640px and larger)
     margin-top: 12px;
   }
 
-  nav > ul {
+  nav>ul {
     margin: 1.2em 0;
   }
 
@@ -452,6 +479,7 @@ S devices (640px and larger)
     max-width: 80px;
     text-align: left
   }
+
   /* HOME PAGE */
   #hero {
     text-align: center;
@@ -484,6 +512,10 @@ S devices (640px and larger)
     width: 100%;
   }
 
+  #about-page h1 {
+  padding: 30px;
+  }
+
   #about-page h2 {
     margin-top: 45px;
   }
@@ -492,9 +524,21 @@ S devices (640px and larger)
     margin-top: 0;
   }
 
-  #mystory {
-    max-width: 600px;
-    margin: 0 auto;
+  #resume-button {
+  padding-top: 10px;
+  }
+
+  .leftp50 {
+    padding-left: 40px;
+    padding-top: 0px;
+  }
+
+  .skills {
+    padding-top: 30px;
+  }
+
+  .tools {
+    padding-top: 30px;
   }
 
   /* FOOTER*/
@@ -527,79 +571,118 @@ M devices - 768px and larger
       display: table;
     }
 
-      /* ABOUT PAGE */
-      .multi-column-list ul {
-        margin-top: 0;
-      }
+    /* ABOUT PAGE */
+    .multi-column-list ul {
+      margin-top: 0;
+    }
 
-      #about-page h2 {
-        margin-top: 45px;
-      }
+    #about-page h2 {
+      margin-top: 45px;
+    }
 
-      #about-page h3 {
-        margin-top: 0;
-      }
+    #about-page h3 {
+      margin-top: 0;
+    }
 
-      /* ==============================
+    /* ==============================
 L devices - 1024px and larger
 ============================== */
-      @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1024px) {
 
-        /* LAYOUT & SPACING */
-        .container {
-          max-width: 1200px;
-          padding: 0 1.75em;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        [class*="col-"] {
-          padding: 0 0.8em;
-        }
-
-        .col-md-75 {
-          width: 75%;
-        }
-
-        .col-md-25 {
-          width: 25%;
-        }
-
-        /* HOME PAGE */
-        #hero {
-          text-align: center;
-        }
-
-        #hero h1 {
-          font-size: 1.60em;
-          font-weight: 500;
-          max-width: 800px;
-          margin: 30px auto;
-        }
-
-        #hero h5 {
-          font-size: 1.1em;
-          font-weight: 400;
-          max-width: 800px;
-        }
-
-        #hero span {
-          display: block;
-        }
-
-        #work h3 {
-          font-size: 1.45em;
-        }
-
-        #work p {
-          font-size: 1.02em;
-        }
-
-        /* ABOUT PAGE*/
-        /* FOOTER*/
-        #Contact p {
-          font-size: 1.05em;
-          max-width: 700px;
-          margin: 30px auto;
-        }
+      /* LAYOUT & SPACING */
+      .container {
+        max-width: 1200px;
+        padding: 0 1.75em;
+        margin-left: auto;
+        margin-right: auto;
       }
+
+      [class*="col-"] {
+        padding: 0 0.8em;
+      }
+
+      .col-lg-7 {
+      width: 45%;
+    }
+
+    .col-lg-5 {
+      width: 55%;
+    }
+
+      /* HOME PAGE */
+      #hero {
+        text-align: center;
+      }
+
+      #hero h1 {
+        font-size: 1.60em;
+        font-weight: 500;
+        max-width: 800px;
+        margin: 30px auto;
+      }
+
+      #hero h5 {
+        font-size: 1.1em;
+        font-weight: 400;
+        max-width: 800px;
+      }
+
+      #hero span {
+        display: block;
+      }
+
+      #work h3 {
+        font-size: 1.45em;
+      }
+
+      #work p {
+        font-size: 1.02em;
+      }
+
+      /* ABOUT PAGE*/
+
+      /* PROJECT PAGES*/
+      .project-image {
+        max-width: 500px;
+        margin: 0 auto 1em;
+      }
+
+      .project-image-cover {
+        max-width: 800px;
+        margin: auto;
+        margin-bottom: 1em;
+      }
+
+      .project-image.internal {
+        margin: 0 auto 1em;
+      }
+
+      .project-image.last {
+        margin-bottom: 0;
+      }
+
+      .text-content {
+        max-width: 800px;
+        margin: 0 auto 1.5em;
+      }
+
+      #conscious p {
+        font-size: 1em;
+      }
+
+      #conscious h3 {
+        font-size: 1.5em;
+      }
+
+      #casestudy-button {
+        text-align: center;
+        margin-top: 1em;
+      }
+
+      /* FOOTER*/
+      #Contact p {
+        font-size: 1.05em;
+        max-width: 700px;
+        margin: 30px auto;
+      }
+    }

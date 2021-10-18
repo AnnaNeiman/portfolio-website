@@ -10,64 +10,66 @@
   <link rel="stylesheet" href="https://use.typekit.net/nlk4fgv.css">
   <link rel="icon" type="image/png" href="img/Favicon/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
-  <script src="https://kit.fontawesome.com/8f23e52dfd.js" crossorigin="anonymous"></script>
-
+  <script src="https://kit.fontawesome.com/197cd10206.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="about-page">
   <header id="myHeader">
     <div class="container">
-      <a href="index.html">
-        <img src="img/logo/logo.svg" alt="Anna Neiman Home" class="logo" />
-        <nav>
-          <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="#Contact">Contact</a></li>
-          </ul>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html">
+          <img src="img/logo/logo.svg" alt="Anna Neiman Home" class="logo" />
+          <nav>
+        </a>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html">Work</a></li>
+          <li class="nav-item"><a href="about.html">About Me</a></li>
+          <li class="nav-item"><a href="#Contact">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+        </ul>
         </nav>
-    </div>
-  </header>
-  <main id="main-content">
-    <!-- HEADING -->
-    <div>
-      <div class="container">
-        <h1>About Me</h1>
       </div>
     </div>
-    <!-- MAIN CONTENT -->
-    <div>
-      <div class="container">
-        <!-- PROFILE IMAGE -->
-        <div class="profile-photo">
-          <picture>
-            <source srcset="img/about/profile-photo@.5.jpg" media="(max-width:300px)">
-            <img src="img/about/profile-photo@1.jpg" alt="Photo of designer Anna Neiman">
-          </picture>
-        </div>
-        <!-- CONTAINER FOR COLUMNS -->
+  </header>
+  <main>
+    <div class="container">
+      <div id="aboutme">
+        <h1>About Me</h1>
         <div class="row">
-          <!-- COLUMN For My STORY -->
-          <div id="mystory">
-            <h2>My Story</h2>
-            <p>I’m Anna, I was born and raised in New York City and I have lived in Colorado for the past seven years. I have been a visual designer for several years and most recently have expanded my design background as a graduate from a UI/UX
-              design program. I am passionate about both mobile and web design. I particularly enjoy collaboration with other people to try and create the best product possible that supports the needs of users. My purpose in pursuing UI/UX design is
-              my ability to directly help people by developing a positive relationship between users and the products they use through improving accessibility.</p>
-            <div id="resume">
-              <a href="files/aneiman_resume.pdf" class="button" target="_blank" download>Download My Resume</a>
-            </div>
+          <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12">
+            <picture class="profile-picture">
+              <source srcset="img/about/profile-photo@.5.jpg" media="(max-width:300px)">
+              <img src="img/about/profile-photo@1.jpg" alt="Profile Picture">
+            </picture>
           </div>
-        </div>
-        <!-- COLUMN: SKILLS AND TOOLS -->
-        <div class="row">
-          <div class="col-lg-4" id="skills-tools">
-            <h2>Skills & Tools</h2>
-            <!-- CONTAINER FOR COLUMNS -->
-            <div class="row">
-              <!-- COLUMN: SKILLS -->
-              <div class="col-sm-6 col-md-6">
-                <h3>Relevant Skills</h3>
-                <div class="multi-column-list">
+          <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12">
+            <div class="leftp50">
+              <h2 style="margin-left: 0px;">My Story</h2>
+              <p>I’m Anna, I was born and raised in New York City and I have lived in Colorado for the past seven years. I have been a visual designer for several years and most recently have expanded my design background as a graduate from a UI/UX
+                design program. I am passionate about both mobile and web design. I particularly enjoy collaboration with other people to try and create the best product possible that supports the needs of users. My purpose in pursuing UI/UX design
+                is my ability to directly help people by developing a positive relationship between users and the products they use through improving accessibility.</p>
+              <div id="resume-button" class="row">
+                <a href="files/aneiman_resume.pdf" class="button" target="blank" download>Download My
+                  Resume</a>
+              </div>
+              <div class="row">
+                <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12">
+                  <h3 class="tools">Tools</h3>
+                  <ul>
+                    <li>Adobe XD</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Sketch</li>
+                    <li>InVision</li>
+                    <li>Figma</li>
+                    <li>Balsamiq</li>
+                    <li>FlowMapp</li>
+                    <li>Proto.io</li>
+                    <li>Flinto</li>
+                  </ul>
+                </div>
+                <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12">
+                  <h3 class="skills">Skills</h3>
                   <ul>
                     <li>Research</li>
                     <li>Competitive Analysis</li>
@@ -82,28 +84,9 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-6">
-                <h3>Tools I Use</h3>
-                <div class="multi-column-list">
-                  <ul>
-                    <li>Adobe XD</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Sketch</li>
-                    <li>InVision</li>
-                    <li>Figma</li>
-                    <li>Balsamiq</li>
-                    <li>FlowMapp</li>
-                    <li>Proto.io</li>
-                    <li>Flinto</li>
-                  </ul>
-                </div>
-              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
   </main>
   <!-- FOOTER TEXT AND BUTTON -->
   <footer id="Contact">
@@ -113,7 +96,7 @@
         <p> I'd love to talk with you about user centric designs or to discuss potential work opportunities. Don't hesitate to get in touch!
         </p>
         <div>
-          <a href="mailto:annaneimandesigns@gmail.com?subject=%20Lets%20get%20in%20touch!" class="button" target="_blank">Email Me</a>
+          <a href="mailto:annaneimandesigns@gmail.com?" class="button" target="_blank">Email Me</a>
         </div>
         <!-- SOCIAL LINKS -->
         <div id="social">
