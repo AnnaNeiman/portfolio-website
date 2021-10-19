@@ -1,0 +1,20 @@
+
+nav.main-content-nav {
+background: #565656;
+color: #848E78;
+margin-top: 0px;
+}
+
+@media (min-height: 300px) {
+  nav.main-content-nav ul {
+    position: sticky;
+    top: 180px;
+    left: 20px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  main {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
