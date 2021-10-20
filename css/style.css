@@ -269,7 +269,7 @@ main {
 
 header {
   background-color: #848E78;
-  padding: 10px, 0, 4px;
+  padding: 10px 0 4px;
   z-index: 9999;
   width: 100%;
   -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 15, 0.4);
@@ -325,8 +325,8 @@ nav>ul>li>a:hover {
 
 .active {
   height: 2px;
-  width 10rem;
-  transition: transform. 6s;
+  width: 10rem;
+  transition-duration: 6s;
 }
 
 /*HAMBURGER MENU*/
@@ -836,3 +836,5 @@ L devices - 1024px and larger
         margin: 30px auto;
       }
     }
+  }
+}
