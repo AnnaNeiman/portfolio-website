@@ -1,8 +1,15 @@
-
 nav.main-content-nav {
-background: #565656;
-color: #848E78;
-margin-top: 0px;
+  background: #ffffff;
+  color: #848E78;
+  margin-top: 0px;
+  line-height: 1.9;
+  max-width: 400px;
+  font-size: .8em;
+}
+
+nav.main-content-nav>ul>li>a {
+  padding: 0 20px;
+  color: #848E78;
 }
 
 @media (min-height: 300px) {
@@ -11,10 +18,17 @@ margin-top: 0px;
     top: 180px;
     left: 20px;
   }
-}
+
 
 @media only screen and (min-width: 640px) {
   main {
     display: grid;
     grid-template-columns: 150px 1fr;
   }
+
+
+  @media only screen and (min-width: 640px) {
+    nav.main-content-nav {
+      background: #F5F5EF;
+      line-height: 3.5;
+}
