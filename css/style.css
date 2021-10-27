@@ -379,6 +379,10 @@ div.profile-photo {
 #resume {
   text-align: center;
 }
+#aboutme {
+  padding-bottom: 2em;
+  padding-top: 4em;
+}
 
 /* FOOTER */
 footer {
@@ -386,7 +390,6 @@ footer {
   text-align: center;
   padding: .5em .5em 0.5em;
   width: 100%;
-  margin-top: 2.8em;
 }
 
 #contact p {
@@ -689,7 +692,7 @@ M devices - 768px and larger
     }
 
     #about-page h2 {
-      margin-top: 45px;
+      margin-top: 0px;
     }
 
     #about-page h3 {
