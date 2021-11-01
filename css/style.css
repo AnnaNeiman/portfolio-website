@@ -315,7 +315,7 @@ nav>ul>li>a:active {
   font-weight: 500;
 }
 
-nav>ul>li>a:hover {
+nav>ul>li>a:hover, nav>ul>li>a:focus {
   display: inline-block;
   color: #848E78;
   background-color: #F5F5EF;
