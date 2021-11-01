@@ -424,7 +424,7 @@ footer {
 }
 
 #social img {
-  height: 46px;
+  height: 42px;
   width: auto;
   opacity: 0.7;
   padding: 12px;
@@ -617,14 +617,6 @@ S devices (640px and larger)
     font-size: 1em;
   }
 
-  #social img {
-    height: 50px;
-    width: auto;
-    opacity: 0.7;
-    padding: 12px;
-    margin: 0 4px;
-    color: #565656
-  }
   /* ==============================
 M devices - 768px and larger
 ============================== */
