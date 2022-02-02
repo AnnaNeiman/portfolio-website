@@ -116,8 +116,8 @@ a:active {
   padding: 10px 20px 8px;
   border-radius: 6px;
   border-bottom: 3px solid #5A6052;
-  transition-duration: .2s;
-  transition: 0.2s opacity;
+  transition-duration: .5s;
+  transition: 0.5s opacity;
 }
 
 .button:visited {
@@ -136,6 +136,12 @@ a:active {
 .button:active {
   color: #FFFFFF;
   background-color: #565656;
+}
+
+.button:focus {
+  outline: none;
+  text-decoration: none;
+  border: 3px solid #848E78;
 }
 
 /* LAYOUT & SPACING */
