@@ -138,12 +138,6 @@ a:active {
   background-color: #565656;
 }
 
-.button:focus {
-  outline: none;
-  text-decoration: none;
-  border: 3px solid #848E78;
-}
-
 /* LAYOUT & SPACING */
 /* top padding on main element accomodates for fixed nav bar */
 main {
