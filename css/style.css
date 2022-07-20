@@ -384,6 +384,10 @@ div.profile-photo {
   padding-top: 4em;
 }
 
+#aboutme h2 {
+  text-align: left;
+}
+
 /* FOOTER */
 footer {
   background-color: #FAFAF7;
@@ -602,7 +606,7 @@ S devices (640px and larger)
   .leftp50 {
     padding-left: 40px;
     padding-top: 0px;
-  }
+}
 
   .skills {
     padding-top: 30px;
