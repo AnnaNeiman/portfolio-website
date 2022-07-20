@@ -100,12 +100,12 @@ a:visited {
 
 a:hover,
 a:focus {
-  color: #848E78;
+  color: #ffffff;
   text-decoration: underline;
 }
 
 a:active {
-  color: #848E78;
+  color: #ffffff;
 }
 
 .button {
@@ -288,27 +288,29 @@ main {
 
 nav>ul {
   list-style-type: none;
-  padding: 0;
 }
 
 nav>ul>li>a {
-  padding: 0 5px;
+  padding: 0 30px;
   font-family: "neue-kabel", sans-serif;
   color: #ffffff;
+  border-radius: 6px;
   text-transform: uppercase;
   font-weight: 500;
 }
 
 nav>ul>li>a:visited {
-  padding: 0 5px;
+  padding: 0 30px;
   color: #ffffff;
+  border-radius: 6px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;
 }
 
 nav>ul>li>a:active {
-  padding: 0 5px;
+  padding: 0 30px;
+  border-radius: 6px;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 500;
@@ -317,6 +319,7 @@ nav>ul>li>a:active {
 nav>ul>li>a:hover, nav>ul>li>a:focus {
   display: inline-block;
   color: #848E78;
+  border-radius: 6px;
   background-color: #F5F5EF;
   text-transform: uppercase;
   text-decoration: none;
@@ -325,6 +328,7 @@ nav>ul>li>a:hover, nav>ul>li>a:focus {
 
 .active {
   height: 2px;
+  border-radius: 6px;
   width: 10rem;
   transition-duration: 6s;
 }
