@@ -13,7 +13,7 @@
 	.st7{opacity:0.13;fill:#3F3F3F;enable-background:new    ;}
 	.st8{opacity:0.14;fill:#3F3F3F;enable-background:new    ;}
 	.st9{fill:#FFFFFF;}
-	.st10{font-family:'BrandonGrotesque-Medium';}
+	.st10{font-family:'BrandonGrotesque-Regular';}
 	.st11{font-size:343.0364px;}
 	.st12{fill:#E8BEAC;}
 	.st13{opacity:0.1;fill:#3F3F3F;enable-background:new    ;}
@@ -102,8 +102,8 @@
 			c-2.6-6.9-2.6-10.1-4.4-15.9c-1.4-4.6-3-7.5-5.9-13C122.8,223,116.5,213.5,115.5,214z"/>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 80.2553 453.632)" class="st9 st10 st11">A</text>
-		<text transform="matrix(1 0 0 1 293.5318 535.2034)" class="st9 st10 st11">N</text>
+		<text transform="matrix(1 0 0 1 80.2553 462.632)" class="st9 st10 st11">A</text>
+		<text transform="matrix(1 0 0 1 281.5318 540.2034)" class="st9 st10 st11">N</text>
 	</g>
 	<g id="hand_right">
 		<path class="st12" d="M41.5,246.8c-1.4,1.4-2,3.7-3.2,8.3c-0.9,3.7-1.2,6.5-1.6,10.7c-1.1,11.9-1.1,9.9-1.4,14.4
