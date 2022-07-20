@@ -263,8 +263,7 @@ main {
 
 /* HEADER/NAV BAR */
 .logo {
-  padding-top: 15px;
-  max-width: 70px;
+  max-width: 80px;
   text-align: left
 }
 
