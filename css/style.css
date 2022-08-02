@@ -2,7 +2,7 @@
 Colors used:
 Primary Color (green): #848E78;
 Secondary Color (brown/gold): #A28359;
-Accent color (cream): #FBFBF8;
+Accent color (cream): #FCFCFA;
 Accent color (white): #FFFFFF;
 Accent color (Grey): #565656
 */
@@ -188,7 +188,7 @@ main {
 
 /* HOME PAGE */
 #hero {
-  background-color: #FBFBF8;
+  background-color: #FCFCFA;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
