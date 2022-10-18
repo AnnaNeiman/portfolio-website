@@ -259,6 +259,16 @@ main {
   margin-top: .75em;
 }
 
+#Design-thinking span {
+font-family: 'neue-kabel', sans-serif;
+font-size: .85em;
+font-weight: 400;
+text-align: left;
+}
+
+#Design-thinking h5 {
+text-align: left;
+}
 /* ACTIVE NAV-PROJECT PAGE/*
 
 /* HEADER/NAV BAR */
@@ -382,6 +392,7 @@ div.profile-photo {
 #resume {
   text-align: center;
 }
+
 #aboutme {
   padding-bottom: 2em;
   padding-top: 4em;
@@ -609,7 +620,7 @@ S devices (640px and larger)
   .leftp50 {
     padding-left: 40px;
     padding-top: 0px;
-}
+  }
 
   .skills {
     padding-top: 30px;
@@ -834,6 +845,13 @@ L devices - 1024px and larger
       .text-content {
         max-width: 800px;
         margin: 0 auto 1.5em;
+      }
+
+      #Deliverables-Role li {
+        display: list-item;
+        font-family: 'neue-kabel', sans-serif;
+        font-size: .85em;
+        font-weight: 400;
       }
 
       #conscious p {
