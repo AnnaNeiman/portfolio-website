@@ -1,3 +1,6 @@
+/* ==============================
+Styling
+================================= */
 nav.main-content-nav {
   background: #ffffff;
   color: #848E78;
@@ -27,6 +30,23 @@ footer {
     position: sticky;
     top: 180px;
     left: 20px;
+  }
+}
+
+/* ==============================
+Media Sizes XS devices (375px)
+================================= */
+@media only screen and (min-width: 375px) {
+  nav.main-content-nav>ul>li>a {
+    display: none;
+  }
+}
+/* ==============================
+Media Sizes S devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  nav.main-content-nav>ul>li>a {
+    display: contents;
   }
 
   @media only screen and (min-width: 640px) {
