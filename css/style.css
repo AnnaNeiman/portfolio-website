@@ -260,15 +260,16 @@ main {
 }
 
 #Design-thinking span {
-font-family: 'neue-kabel', sans-serif;
-font-size: .85em;
-font-weight: 400;
-text-align: left;
+  font-family: 'neue-kabel', sans-serif;
+  font-size: .85em;
+  font-weight: 400;
+  text-align: left;
 }
 
 #Design-thinking h5 {
-text-align: left;
+  text-align: left;
 }
+
 /* ACTIVE NAV-PROJECT PAGE/*
 
 /* HEADER/NAV BAR */
@@ -451,9 +452,9 @@ footer {
 }
 
 /* ==============================
-S devices (640px and larger)
+XS devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 375px) {
 
   /* LAYOUT & SPACING */
   .container {
@@ -518,193 +519,20 @@ S devices (640px and larger)
   .col-12 {
     width: 100%;
   }
-
-  /* HEADER/NAV BAR */
-  header {
-    text-align: unset;
-    padding: 2px 0 6px;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 12px;
-  }
-
-  nav>ul {
-    margin: 1.2em 0;
-  }
-
-  nav>ul>li {
-    display: inline-block;
-  }
-
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
-  }
-
-  .navtoggle.responsive nav {
-    padding: 0 0 0;
-  }
-
-  .navtoggle.responsive li {
-    padding: 0 0 0;
-    border-top: none;
-  }
-
-  .navtoggle.responsive li:last-child {
-    padding: 0 0 0;
-  }
-
-  main {
-    padding-top: 100px;
-  }
-
-  .logo {
-    max-width: 80px;
-    text-align: left
-  }
-
-  /* HOME PAGE */
-  #hero {
-    text-align: center;
-  }
-
-  #hero h1 {
-    font-size: 1.5em;
-    font-weight: 500;
-    max-width: 420px;
-    margin: 30px auto;
-  }
-
-  #hero h5 {
-    font-size: 1.2em;
-    font-weight: 400;
-    margin: 20px auto;
-    max-width: 360px;
-  }
-
-  #hero span {
-    display: block;
-  }
-
-  #work p {
-    font-size: 1em;
-  }
-
-  /* ABOUT ME */
-  #skills-tools {
-    width: 100%;
-  }
-
-  #about-page h1 {
-    padding: 30px;
-  }
-
-  #about-page h2 {
-    margin-top: 45px;
-  }
-
-  #about-page h3 {
-    margin-top: 0;
-  }
-
-  #resume-button {
-    padding-top: 10px;
-  }
-
-  .leftp50 {
-    padding-left: 40px;
-    padding-top: 0px;
-  }
-
-  .skills {
-    padding-top: 30px;
-  }
-
-  .tools {
-    padding-top: 30px;
-  }
-
-  /* FOOTER*/
-  #Contact p {
-    font-size: 1em;
-  }
-
-  #social img {
-    height: 50px;
-    width: auto;
-    opacity: 0.7;
-    padding: 12px;
-    margin: 0 4px;
-    color: #565656
-  }
-
+  
   /* ==============================
-M devices - 768px and larger
-============================== */
-  @media only screen and (min-width: 768px) {
+S devices (640px and larger)
+================================= */
+  @media only screen and (min-width: 640px) {
 
     /* LAYOUT & SPACING */
     .container {
-      margin: 0 1.75em;
+      margin: 0 1.5em;
     }
 
     [class*="col-"] {
-      padding: 0 0.65em;
       float: left;
-    }
-
-    .col-lg-1 {
-      width: 8.33%;
-    }
-
-    .col-lg-2 {
-      width: 16.66%;
-    }
-
-    .col-lg-3 {
-      width: 25%;
-    }
-
-    .col-lg-4 {
-      width: 33.33%;
-    }
-
-    .col-lg-5 {
-      width: 41.66%;
-    }
-
-    .col-lg-6 {
-      width: 50%;
-    }
-
-    .col-lg-7 {
-      width: 58.33%;
-    }
-
-    .col-lg-8 {
-      width: 66.66%;
-    }
-
-    .col-lg-9 {
-      width: 75%;
-    }
-
-    .col-lg-10 {
-      width: 83.33%;
-    }
-
-    .col-lg-11 {
-      width: 91.66%;
-    }
-
-    .col-lg-12 {
-      width: 100%;
+      padding: 0 0.65em;
     }
 
     .row:after {
@@ -713,49 +541,207 @@ M devices - 768px and larger
       display: table;
     }
 
-    /* ABOUT PAGE */
-    .multi-column-list ul {
-      margin-top: 0;
+    .col-1 {
+      width: 8.33%;
+    }
+
+    .col-2 {
+      width: 16.66%;
+    }
+
+    .col-3 {
+      width: 25%;
+    }
+
+    .col-4 {
+      width: 33.33%;
+    }
+
+    .col-5 {
+      width: 41.66%;
+    }
+
+    .col-6 {
+      width: 50%;
+    }
+
+    .col-7 {
+      width: 58.33%;
+    }
+
+    .col-8 {
+      width: 66.66%;
+    }
+
+    .col-9 {
+      width: 75%;
+    }
+
+    .col-10 {
+      width: 83.33%;
+    }
+
+    .col-11 {
+      width: 91.66%;
+    }
+
+    .col-12 {
+      width: 100%;
+    }
+
+    /* HEADER/NAV BAR */
+    header {
+      text-align: unset;
+      padding: 2px 0 6px;
+    }
+
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 12px;
+    }
+
+    nav>ul {
+      margin: 1.2em 0;
+    }
+
+    nav>ul>li {
+      display: inline-block;
+    }
+
+    .navtoggle li:not(:last-child) {
+      display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+      display: none;
+    }
+
+    .navtoggle.responsive nav {
+      padding: 0 0 0;
+    }
+
+    .navtoggle.responsive li {
+      padding: 0 0 0;
+      border-top: none;
+    }
+
+    .navtoggle.responsive li:last-child {
+      padding: 0 0 0;
+    }
+
+    main {
+      padding-top: 100px;
+    }
+
+    .logo {
+      max-width: 80px;
+      text-align: left
+    }
+
+    /* HOME PAGE */
+    #hero {
+      text-align: center;
+    }
+
+    #hero h1 {
+      font-size: 1.5em;
+      font-weight: 500;
+      max-width: 420px;
+      margin: 30px auto;
+    }
+
+    #hero h5 {
+      font-size: 1.2em;
+      font-weight: 400;
+      margin: 20px auto;
+      max-width: 360px;
+    }
+
+    #hero span {
+      display: block;
+    }
+
+    #work p {
+      font-size: 1em;
+    }
+
+    /* ABOUT ME */
+    #skills-tools {
+      width: 100%;
+    }
+
+    #about-page h1 {
+      padding: 30px;
     }
 
     #about-page h2 {
-      margin-top: 0px;
+      margin-top: 45px;
     }
 
     #about-page h3 {
       margin-top: 0;
     }
 
+    #resume-button {
+      padding-top: 10px;
+    }
+
+    .leftp50 {
+      padding-left: 40px;
+      padding-top: 0px;
+    }
+
+    .skills {
+      padding-top: 30px;
+    }
+
+    .tools {
+      padding-top: 30px;
+    }
+
+    /* FOOTER*/
+    #Contact p {
+      font-size: 1em;
+    }
+
+    #social img {
+      height: 50px;
+      width: auto;
+      opacity: 0.7;
+      padding: 12px;
+      margin: 0 4px;
+      color: #565656
+    }
+
     /* ==============================
-L devices - 1024px and larger
+M devices - 768px and larger
 ============================== */
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px) {
 
       /* LAYOUT & SPACING */
       .container {
-        max-width: 1200px;
-        padding: 0 1.75em;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 1.75em;
       }
 
       [class*="col-"] {
-        padding: 0 0.8em;
+        padding: 0 0.65em;
+        float: left;
       }
 
-      .col-xl-1 {
+      .col-lg-1 {
         width: 8.33%;
       }
 
-      .col-xl-2 {
+      .col-lg-2 {
         width: 16.66%;
       }
 
-      .col-xl-3 {
+      .col-lg-3 {
         width: 25%;
       }
 
-      .col-xl-4 {
+      .col-lg-4 {
         width: 33.33%;
       }
 
@@ -763,116 +749,200 @@ L devices - 1024px and larger
         width: 41.66%;
       }
 
-      .col-xl-6 {
+      .col-lg-6 {
         width: 50%;
       }
 
-      .col-xl-7 {
+      .col-lg-7 {
         width: 58.33%;
       }
 
-      .col-xl-8 {
+      .col-lg-8 {
         width: 66.66%;
       }
 
-      .col-xl-9 {
+      .col-lg-9 {
         width: 75%;
       }
 
-      .col-xl-10 {
+      .col-lg-10 {
         width: 83.33%;
       }
 
-      .col-xl-11 {
+      .col-lg-11 {
         width: 91.66%;
       }
 
-      .col-xl-12 {
+      .col-lg-12 {
         width: 100%;
       }
 
-      /* HOME PAGE */
-      #hero {
-        text-align: center;
+      .row:after {
+        content: "";
+        clear: both;
+        display: table;
       }
 
-      #hero h1 {
-        font-size: 1.60em;
-        font-weight: 500;
-        max-width: 800px;
-        margin: 30px auto;
+      /* ABOUT PAGE */
+      .multi-column-list ul {
+        margin-top: 0;
       }
 
-      #hero h5 {
-        font-size: 1.1em;
-        font-weight: 400;
-        max-width: 800px;
+      #about-page h2 {
+        margin-top: 0px;
       }
 
-      #hero span {
-        display: block;
+      #about-page h3 {
+        margin-top: 0;
       }
 
-      #work h3 {
-        font-size: 1.45em;
-      }
+      /* ==============================
+L devices - 1024px and larger
+============================== */
+      @media only screen and (min-width: 1024px) {
 
-      #work p {
-        font-size: 1.02em;
-      }
+        /* LAYOUT & SPACING */
+        .container {
+          max-width: 1200px;
+          padding: 0 1.75em;
+          margin-left: auto;
+          margin-right: auto;
+        }
 
-      /* ABOUT PAGE*/
-      /* PROJECT PAGES*/
-      .project-image {
-        max-width: 500px;
-        margin: 0 auto 1em;
-      }
+        [class*="col-"] {
+          padding: 0 0.8em;
+        }
 
-      .project-image-cover {
-        max-width: 800px;
-        margin: auto;
-        margin-bottom: 1em;
-      }
+        .col-xl-1 {
+          width: 8.33%;
+        }
 
-      .project-image.internal {
-        margin: 0 auto 1em;
-      }
+        .col-xl-2 {
+          width: 16.66%;
+        }
 
-      .project-image.last {
-        margin-bottom: 0;
-      }
+        .col-xl-3 {
+          width: 25%;
+        }
 
-      .text-content {
-        max-width: 800px;
-        margin: 0 auto 1.5em;
-      }
+        .col-xl-4 {
+          width: 33.33%;
+        }
 
-      #Deliverables-Role li {
-        display: list-item;
-        font-family: 'neue-kabel', sans-serif;
-        font-size: .85em;
-        font-weight: 400;
-      }
+        .col-lg-5 {
+          width: 41.66%;
+        }
 
-      #conscious p {
-        font-size: 1em;
-      }
+        .col-xl-6 {
+          width: 50%;
+        }
 
-      #conscious h3 {
-        font-size: 1.5em;
-      }
+        .col-xl-7 {
+          width: 58.33%;
+        }
 
-      #casestudy-button {
-        text-align: center;
-        margin-top: 1em;
-      }
+        .col-xl-8 {
+          width: 66.66%;
+        }
 
-      /* FOOTER*/
-      #Contact p {
-        font-size: 1.05em;
-        max-width: 700px;
-        margin: 30px auto;
+        .col-xl-9 {
+          width: 75%;
+        }
+
+        .col-xl-10 {
+          width: 83.33%;
+        }
+
+        .col-xl-11 {
+          width: 91.66%;
+        }
+
+        .col-xl-12 {
+          width: 100%;
+        }
+
+        /* HOME PAGE */
+        #hero {
+          text-align: center;
+        }
+
+        #hero h1 {
+          font-size: 1.60em;
+          font-weight: 500;
+          max-width: 800px;
+          margin: 30px auto;
+        }
+
+        #hero h5 {
+          font-size: 1.1em;
+          font-weight: 400;
+          max-width: 800px;
+        }
+
+        #hero span {
+          display: block;
+        }
+
+        #work h3 {
+          font-size: 1.45em;
+        }
+
+        #work p {
+          font-size: 1.02em;
+        }
+
+        /* ABOUT PAGE*/
+        /* PROJECT PAGES*/
+        .project-image {
+          max-width: 500px;
+          margin: 0 auto 1em;
+        }
+
+        .project-image-cover {
+          max-width: 800px;
+          margin: auto;
+          margin-bottom: 1em;
+        }
+
+        .project-image.internal {
+          margin: 0 auto 1em;
+        }
+
+        .project-image.last {
+          margin-bottom: 0;
+        }
+
+        .text-content {
+          max-width: 800px;
+          margin: 0 auto 1.5em;
+        }
+
+        #Deliverables-Role li {
+          display: list-item;
+          font-family: 'neue-kabel', sans-serif;
+          font-size: .85em;
+          font-weight: 400;
+        }
+
+        #conscious p {
+          font-size: 1em;
+        }
+
+        #conscious h3 {
+          font-size: 1.5em;
+        }
+
+        #casestudy-button {
+          text-align: center;
+          margin-top: 1em;
+        }
+
+        /* FOOTER*/
+        #Contact p {
+          font-size: 1.05em;
+          max-width: 700px;
+          margin: 30px auto;
+        }
       }
     }
   }
-}
